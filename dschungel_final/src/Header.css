@@ -1,0 +1,53 @@
+header {
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    background: #5cc724;
+    color: black;
+}
+
+Header nav {
+    background: #5cc724;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    font-size: 1.1rem;
+    margin: 0;
+    padding-left: 5vw;
+}
+
+Header ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+Header li {
+    display: flex;
+    list-style-type: none;
+    padding: 0 13px;
+    align-items: center;
+}
+
+Header a {
+    text-decoration: none;
+    color: black;
+}
+
+Header input {
+    align-items: center;
+    background: #4f4f4f;
+    border-radius: 15px;
+    color: white;
+    font-size: 3vh;
+    padding-left: 10px;
+    margin: 0px 13px;
+    height: 4vh;
+    border: none;
+    justify-self: end;
+}
+
+Header li:hover {
+    background: #7ce745;
+}

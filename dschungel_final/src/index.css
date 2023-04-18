@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Helvetica, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "HVD_Poster_Clean";
+  src: local("HVD_Poster_Clean"),
+  url("./../public/HVD_Poster_Clean.ttf") format("truetype");
+}
+
+h1, h2, h3, header{
+  font-family: HVD_Poster_Clean, serif ;
+}
+
+h1 {
+  color: #559e4d;
+  font-size: 5rem;
+}

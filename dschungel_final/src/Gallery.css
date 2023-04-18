@@ -1,0 +1,142 @@
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+.galleryView img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+}
+
+.galleryView figure {
+    border-radius: 10px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.galleryView figcaption {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 3rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(2rem);
+    bottom: 0;
+    color: transparent;
+    background-color: transparent;
+    font-size: 1.3rem;
+    transition: 0.8s;
+}
+
+.galleryView figure:hover figcaption {
+    transform: translateY(0rem);
+    transition: 1s;
+    background-color: rgba(220, 138, 112, 0.87);
+    color: black;
+    scale: 100%;
+}
+
+.galleryView figure:hover img {
+    border-radius: 20px;
+    transition: 1s;
+    scale: 104%;
+}
+
+.galleryView figure:nth-child(1) {
+    grid-area: img1;
+}
+
+.galleryView figure:nth-child(2) {
+    grid-area: img2;
+}
+
+.galleryView figure:nth-child(3) {
+    grid-area: img3;
+}
+
+.galleryView figure:nth-child(4) {
+    grid-area: img4;
+}
+
+.galleryView figure:nth-child(5) {
+    grid-area: img5;
+}
+
+.galleryView figure:nth-child(6) {
+    grid-area: img6;
+}
+
+.galleryView figure:nth-child(7) {
+    grid-area: img7;
+}
+
+.galleryView figure:nth-child(8) {
+    grid-area: img8;
+}
+
+.galleryView figure:nth-child(9) {
+    grid-area: img9;
+}
+
+.galleryView figure:nth-child(10) {
+    grid-area: img10;
+}
+
+.galleryView figure:nth-child(11) {
+    grid-area: img11;
+}
+
+.galleryView figure:nth-child(12) {
+    grid-area: img12;
+}
+
+
+.galleryView {
+    transition: ease-in-out 1s;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    display: grid;
+    width: 80%;
+    grid-gap: 4px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"img1 img2"
+    "img3 img4"
+    "img5 img6"
+    "img12 img12"
+    "img7 img8"
+    "img9 img8"
+    "img10 img11";
+}
+
+@media (max-width: 800px) {
+
+    .galleryView {
+        transition: ease-in-out 1s;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:"img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img12"
+        "img12"
+        "img7"
+        "img8"
+        "img9"
+        "img10"
+        "img11";
+    }
+}

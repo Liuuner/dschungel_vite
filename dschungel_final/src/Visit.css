@@ -1,0 +1,76 @@
+.visit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.visit input {
+    height: 2rem;
+    width: 8rem;
+    border: #7ce745 solid 1px;
+    border-radius: 5px;
+    margin: 0 10px;
+    outline: none;
+    transition: ease-in-out, width .35s ease-in-out;
+    font-size: 1rem;
+}
+
+.visit > button {
+    background: #7ce745;
+    border: none;
+    border-radius: 3px;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 5px;
+}
+
+.visit > button:hover {
+    background-color: #5cc724;
+}
+
+.visit div button {
+    border: #7ce745 2px solid;
+    background: none;
+    border-radius: 3px;
+    height: 2rem;
+}
+
+.visit input:focus {
+    border: #7ce745 solid 3px;
+    outline: none;
+    width: 15rem;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+
+.visit table {
+    width: 90vw;
+    border-collapse: collapse;
+}
+
+.connection:hover {
+    border-radius: 23px;
+    background-color: #ffece5;
+    transition: background 300ms ease-out;
+}
+
+.connection {
+    border-radius: 23px;
+    height: 113px;
+    background-color: #f2fff2;
+    transition: background 300ms ease-out;
+}
+
+.connection td {
+    padding: 3rem;
+}
+
+.connectionTitle {
+    margin-top: 4vh;
+    font-family: "Helvetica Neue", sans-serif;
+    color: black;
+}
